@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID in database security</title>
+</head>
+<style>
+    body{
+            background: rgb(16, 231, 124) ;
+            color : rgb(8, 8, 8);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        h1{
+            color: red;
+        
+        }
+        h2{
+            color: rgb(8, 8, 8);
+        
+        }
+</style>
+<body>
+    <h1>
+          RAID  IN DATABASE SECURITY
+    </h1>
+    
+        <H2> RAID 10 by M.PIUS.K </H2>
+    <p>
+        RAID 10, also known as RAID 1+0, is a RAID configuration that combines disk mirroring and disk striping to protect data.
+RAID 10 is similar to RAID 01 but with one subtle difference: Rather than being a mirrored stripe set, it acts as a stripe of mirrors. Every disk in this architecture is mirrored to another 
+disk. 
+This means that the RAID 10 architecture consists of a single stripe set in which all the disks are mirrored pairs.  
+    </p>
+    <tr>
+        <td><img src="mpk.jpeg" width=40% height=55% /></td>
+
+    </tr>
+    
+
+<p>RAID 10 and RAID 01 provide identical capacities and performance, but both architectures have the same amount of storage overhead, prioritizing redundancy over capacity. The difference is that RAID 10 provides better fault tolerance in most cases because it is not limited to two groups.
+    Suppose that a RAID 01 array suffered two simultaneous disk failures and the disks were in two different groups. Because there are only two groups total, the entire array would fail. Conversely, each disk in a RAID 10 array is a mirrored pair, so the simultaneous failure of two disks would not bring down a RAID 10 array unless the failed disks just happened to be mirrored partners of one another.
+    RAID 10 is secure because mirroring duplicates all your data. It's fast because the data is striped across multiple disks; chunks of data can be read and written to different disks simultaneously. To implement RAID 10, you need at least four physical hard drives. You also need a disk controller that supports RAID.
+    Whenever you write data in your server, you can use RAID 10 to write that data across several discs at the same time. This improves speed substantially, and the same holds true for the reading of that data as well. Data restoration is also much quicker than other RAID levels.
+    The only absolute requirement for matching drive specs in a RAID 10 array is that the drives must be of the same architecture
+    </p>
+    <p>The Advantages Of RAID 10</p>
+<p>
+    Increased read speed compared to single drives
+    Increased fail-safety of the integrated hard drives
+    Combining these two storage levels makes RAID 10 fast and resilient at the same time. If you need hardware-level protection for your data and faster storage performance, RAID 10 is a simple, relatively inexpensive fix. RAID 10 is secure because mirroring duplicates all your data. It's fast because the data is striped across multiple disks; chunks of data can be read and written to different disks simultaneously.
+    </p>
+    <p>Disadvantages of RAID 10</p>
+<p>
+Failure of two disks in a sub-array leads to whole system crashing 
+Maximum available storage capacity limited
+</p>
+
+
+    
+</body>
+</html>
+
+
